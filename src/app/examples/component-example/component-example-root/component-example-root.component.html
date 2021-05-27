@@ -1,0 +1,31 @@
+<app-example-view>
+    <app-loading [isLoading]="service.isLoading" [mode]="service.getMode()" [position]="service.position"
+        [diameter]="service.size" [color]="service.theme">
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Ab cumque pariatur excepturi illum ipsum blanditiis deleniti obcaecati.
+            Inventore ut distinctio architecto laudantium eveniet, dignissimos vitae,
+            dolorem illum sit facere quam.</div>
+    </app-loading>
+</app-example-view>
+
+<pre>
+    <code [highlight]="playgroundSample()" [languages]="['html']" [lineNumbers]='true'></code>
+</pre>
+
+<app-controls></app-controls>
+
+<h2>To DO</h2>
+<ul>
+    <li>add custom loading template (low effort)</li>
+</ul>
+<h2>Pros</h2>
+<ul>
+    <li>easy to use</li>
+    <li>easy to styling</li>
+    <li>low code complexity</li>
+    <li>no hacks!</li>
+</ul>
+<h2>Cons</h2>
+<ul>
+    <li>is not directive</li>
+</ul>

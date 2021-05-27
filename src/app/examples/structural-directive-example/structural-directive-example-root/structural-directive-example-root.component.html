@@ -1,0 +1,30 @@
+<app-example-view>
+    <div
+        *appLoadingStruturalDirective="service.isLoading; mode: service.getMode(); config: { diameter: service.size, color: service.theme, position: service.position }">
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Ab cumque pariatur excepturi illum ipsum blanditiis deleniti obcaecati.
+            Inventore ut distinctio architecto laudantium eveniet, dignissimos vitae,
+            dolorem illum sit facere quam.</div>
+    </div>
+</app-example-view>
+
+<pre>
+    <code [highlight]="playgroundSample()" [languages]="['html']" [lineNumbers]='true'></code>
+</pre>
+
+<app-controls></app-controls>
+
+<h2>To DO</h2>
+<ul>
+    <li>replace timeout hack</li>
+</ul>
+<h2>Pros</h2>
+<ul>
+    <li>easy to use</li>
+    <li>medium code complexity</li>
+</ul>
+<h2>Cons</h2>
+<ul>
+    <li>is directive!</li>
+    <li>during loading we wrapp host component with own code - this may cause problems</li>
+</ul>

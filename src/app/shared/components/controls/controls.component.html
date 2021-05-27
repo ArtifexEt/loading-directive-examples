@@ -1,0 +1,42 @@
+<div class="container">
+    <section>
+        <mat-label>Is loading: </mat-label>
+        <mat-checkbox [(ngModel)]="service.isLoading"></mat-checkbox>
+    </section>
+
+    <section>
+        <mat-label>Is Overlay</mat-label>
+        <mat-checkbox [(ngModel)]="service.isOverlay"></mat-checkbox>
+    </section>
+
+    <section>
+        <mat-label>Spiner Size: </mat-label>
+        <input [(ngModel)]="service.size" matInput type="number" min="1">
+    </section>
+
+    <section>
+        <mat-label>Color: </mat-label>
+        <select [(ngModel)]="service.theme">
+            <option value="primary">primary</option>
+            <option value="accent">accent</option>
+            <option value="warn">warn</option>
+            <option>undefined</option>
+        </select>
+    </section>
+
+    <section>
+        <mat-label>Position: </mat-label>
+        <select [(ngModel)]="service.position">
+            <option value="top-left">top-left</option>
+            <option value="top-right">top-right</option>
+            <option value="top-center">top-center</option>
+            <option value="left">left</option>
+            <option value="right">right</option>
+            <option value="center">center</option>
+            <option value="bottom-left">bottom-left</option>
+            <option value="bottom-right">bottom-right</option>
+            <option value="bottom-center">bottom-center</option>
+            <option>undefined</option>
+        </select>
+    </section>
+</div>
